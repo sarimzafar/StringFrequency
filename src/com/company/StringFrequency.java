@@ -15,13 +15,13 @@ public class StringFrequency {
         Scanner obj = new Scanner(System.in);
         StringFrequency stringFrequency = new StringFrequency();
         String temp = stringFrequency.word = obj.next();
-        Iterator<HashMap.Entry<Character, Integer>> it = stringFrequency.hashMap.entrySet().iterator();
+
 
         for (int i = 0; i < temp.length(); i++) {
             stringFrequency.calcFrequency(temp.charAt(i));
         }
 
-        for (HashMap.Entry<Character, Integer> entry : stringFrequency.hashMap.entrySet()) {
+        for (HashMap.Entry<Character, Integer> entry : stringFrequency.hashMap.entrySet()) {//for each entry in the entryset of the hashmap
             if (entry.getValue() != 1)
                 System.out.print(entry.getKey() + "" + entry.getValue());
             else
