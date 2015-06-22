@@ -39,6 +39,8 @@ public class StringFrequency {
             if (character == word.charAt(i))
                 count++;
         }
-        hashMap.put(character, count);
+        
+        if(!hashMap.containsKey(character))
+            hashMap.put(character, count);
     }
 }
