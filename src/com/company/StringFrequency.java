@@ -2,6 +2,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
 
+//Worst Case Complexity of O(n^2)
+
 /**
  * Created by shassanzafar on 6/22/2015.
  */
