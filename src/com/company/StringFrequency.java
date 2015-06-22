@@ -14,6 +14,7 @@ public class StringFrequency {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         StringFrequency stringFrequency = new StringFrequency();
+        System.out.println("Enter the word:");
         String temp = stringFrequency.word = obj.next();
 
 
