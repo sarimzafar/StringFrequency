@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by shassanzafar on 6/22/2015.
  */
 public class StringFrequency {
-
+    //Class variables to ensure ease of access
     HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
     String word = "";
 
