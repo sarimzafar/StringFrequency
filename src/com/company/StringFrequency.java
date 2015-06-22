@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -9,17 +10,22 @@ public class StringFrequency {
     HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
     String word = "";
 
+
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         StringFrequency stringFrequency = new StringFrequency();
         String temp = stringFrequency.word = obj.next();
+        Iterator<HashMap.Entry<Character, Integer>> it = stringFrequency.hashMap.entrySet().iterator();
+
         for (int i = 0; i < temp.length(); i++) {
             stringFrequency.calcFrequency(temp.charAt(i));
         }
 
-        for (char i = 'a'; i <= 'z'; i++) {
-            if (stringFrequency.hashMap.containsKey(i))
-                System.out.print(i + stringFrequency.hashMap.get(temp.charAt(i)));
+        for (HashMap.Entry<Character, Integer> entry : stringFrequency.hashMap.entrySet()) {
+            if (entry.getValue() != 1)
+                System.out.print(entry.getKey() + "" + entry.getValue());
+            else
+                System.out.print(entry.getKey());
         }
 
     }
