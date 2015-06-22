@@ -20,8 +20,8 @@ public class StringFrequency {
         for (int i = 0; i < temp.length(); i++) {
             stringFrequency.calcFrequency(temp.charAt(i));
         }
-
-        for (HashMap.Entry<Character, Integer> entry : stringFrequency.hashMap.entrySet()) {//for each entry in the entryset of the hashmap
+        //for each entry in the Hashmap
+        for (HashMap.Entry<Character, Integer> entry : stringFrequency.hashMap.entrySet()) {
             if (entry.getValue() != 1)
                 System.out.print(entry.getKey() + "" + entry.getValue());
             else
