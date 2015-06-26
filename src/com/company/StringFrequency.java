@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 
 //Worst Case Complexity of O(n^2)
@@ -9,7 +10,7 @@ import java.util.Scanner;
  */
 public class StringFrequency {
     //Class variables to ensure ease of access
-    HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
+    LinkedHashMap<Character, Integer> hashMap = new LinkedHashMap<Character, Integer>();
     String word = "";
 
 
