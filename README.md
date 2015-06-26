@@ -14,4 +14,4 @@ Input:
 wareplayer
 
 Output:
-pa2r2e2wyl
+wa2r2e2ply
