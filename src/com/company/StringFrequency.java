@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+//Total running time of O(nlogn)
 /**
  * Created by shassanzafar on 6/22/2015.
  */
